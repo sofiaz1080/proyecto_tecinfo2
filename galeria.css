@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #e0b0ff; /* Color lila */
+    color: #333;
+}
+
+header {
+    background-color: #a78cd1; /* Tono lila para el encabezado */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.galeria {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea una cuadrícula adaptable */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.imagen-galeria {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Indica que la imagen es interactiva */
+    transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.05); /* Ligeramente más grande al hacer hover */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Se mantiene en la ventana */
+    z-index: 1; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita el scroll si la imagen es muy grande */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro y semitransparente */
+}
+
+.imagen-modal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* Botón para cerrar el modal */
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación para el modal */
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}

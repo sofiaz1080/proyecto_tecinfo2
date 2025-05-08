@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="estilos_galeria.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes</h1>
+    </header>
+    <main class="galeria">
+        <div class="grid-container">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\hambre cero 2.webp" alt="Imagen 1" class="imagen-galeria">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\Hambre-Cero 3.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\HAMBRE-13.jpg" alt="Imagen 3" class="imagen-galeria">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\hambre cero 4.jpg" alt="Imagen 4" class="imagen-galeria">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\hambre cero 5.png" class="imagen-galeria">
+            <img src="C:\Users\usuariocc10\Documents\Proyecto_JS\hambre cero 6.jpg" alt="Imagen 6" class="imagen-galeria">
+        </div>
+        <div id="modal" class="modal">
+            <span class="cerrar-modal">&times;</span>
+            <img id="imagen-modal" class="imagen-modal">
+        </div>
+    </main>
+    <script src="script_galeria.js"></script>
+</body>
+</html>

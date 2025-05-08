@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #e0b0ff; /* Color lila */
+    color: #333;
+}
+
+header {
+    background-color: #a78cd1; /* Tono lila para el encabezado */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.carrusel-contenedor {
+    max-width: 800px; /* Ancho máximo del carrusel */
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Oculta las imágenes que están fuera del contenedor */
+    padding: 20px;
+}
+
+.carrusel {
+    display: flex; /* Coloca las imágenes en línea horizontalmente */
+    transition: transform 0.5s ease-in-out; /* Animación suave para el desplazamiento */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los botones de navegación */
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.anterior:hover, .siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

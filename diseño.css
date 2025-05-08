@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #e0b0ff; /* Color lila */
+    color: #333;
+}
+
+header {
+    background-color: #553575; /* Un tono de lila más oscuro para contraste */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Ajusta la altura según el header */
+    padding: 20px;
+}
+
+.bienvenida {
+    background-color: #f8f0fb; /* Un tono de lila más claro para la sección */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bienvenida h1 {
+    color: #553575; /* Tono lila para el título */
+    margin-bottom: 10px;
+}
+
+.bienvenida h2 {
+    color: #7d5ba6; /* Otro tono de lila para el subtítulo */
+    margin-top: 20px;
+}
+
+.bienvenida ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bienvenida ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.bienvenida p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.imagen-portada {
+    max-width: 200px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+#miBoton {
+    background-color: #a78cd1; /* Tono lila para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+#miBoton:hover {
+    background-color: #886ab5; /* Tono lila más oscuro al pasar el ratón */
+}
